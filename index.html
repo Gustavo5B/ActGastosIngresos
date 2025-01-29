@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Ingresos y Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Ingresos y Gastos</h1>
+        
+        <div class="input-group">
+            <input type="number" id="monto" placeholder="Monto" required>
+            <input type="text" id="descripcion" placeholder="Descripción" required>
+        </div>
+
+        <div class="button-group">
+            <button id="btnIngreso" class="btn ingreso">Agregar Ingreso</button>
+            <button id="btnGasto" class="btn gasto">Agregar Gasto</button>
+        </div>
+        
+        <h2 class="balance">Balance: <span id="balance">$0.00</span></h2>
+        
+        <h3>Historial de Transacciones</h3>
+        <ul class="listaTransacciones" id="listaTransacciones"></ul>
+    </div>
+
+    <script src="./app.js"></script> <!-- Aquí se carga el archivo compilado -->
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Estilos globales */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cuerpo de la página */
+body {
+  background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Título */
+h1 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Campos de entrada */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2em;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Botones */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 14px;
+  font-size: 1.2em;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#btnIngreso {
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+
+#btnGasto {
+  background: linear-gradient(135deg, #d50000, #ff1744);
+  box-shadow: 0 4px 15px rgba(213, 0, 0, 0.3);
+}
+
+#btnIngreso:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00c853;
+}
+
+#btnGasto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff1744;
+}
+
+/* Balance */
+.balance {
+  color: #ffcc00;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+}
+
+.balance span {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Historial de transacciones */
+.listaTransacciones {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1.2em;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.listaTransacciones .ingreso {
+  color: #00c853;
+  font-weight: bold;
+}
+
+.listaTransacciones .gasto {
+  color: #ff1744;
+  font-weight: bold;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
